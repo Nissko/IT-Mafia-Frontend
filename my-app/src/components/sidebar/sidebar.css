@@ -1,0 +1,103 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #202020;
+  color: #ffffff;
+  transition: width 0.3s;
+  overflow-y: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #303030;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.sidebar-menu {
+  padding-top: 8px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 48px;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  margin-left: 26px;
+}
+
+.sidebar-menu-item.active {
+  background-color: #282828;
+}
+
+.sidebar-menu-item i {
+  font-size: 24px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.sidebar-menu-item span {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.sidebar-menu-item-content {
+  display: flex;
+  align-items: center;
+  /* justify-content: ${collapsed ? 'center' : 'flex-start'}; */
+  width: 100%;
+}
+
+.fa {
+  font-family: 'Font Awesome 5 Free';
+}
+
+.sidebar-menu-item {
+  transition: transform 0.3s ease;
+}
+
+.sidebar-menu-item:hover {
+  transform: scale(1.1);
+}
