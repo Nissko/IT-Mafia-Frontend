@@ -6,12 +6,17 @@ import NavBar from './components/sidebar/sidebar';
 import Table from './components/table/table'; 
 import Footer from './components/footer/footer';  
 import SideBar from './components/sidebar/sidebar'; 
+import Company from './components/company/company';
+import Shop from './components/shop/list-of-products/list-of-products';
+
 const App = () => {
   return (
     <div className="App">
       {/* <NavBar/> */}
       <Header/>
-      <Table/>
+      <Shop/>
+      {/* <Company/> */}
+      {/* <Table/> */}
       <SideBar/>
       <Footer/>
     </div>
