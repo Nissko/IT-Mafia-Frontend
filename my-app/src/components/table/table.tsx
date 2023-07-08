@@ -5,7 +5,15 @@ const Table = () => {
     return <div className="table">
         <div className="container">
             <h2>
-                {/*Responsive Tables Using LI <small>Triggers on 767px</small>*/}
+                <button className="button family">
+                    Семья
+                </button>
+                <button className="button curator">
+                    Куратор
+                </button>
+                <button className="button add">
+                    Добавить семью
+                </button>
             </h2>
             <ul className="responsive-table">
                 <li className="table-header">
