@@ -6,7 +6,6 @@ import ListOfProducts from "./list-of-products/list-of-products";
 const ShopPaage = () => {
     return(
         <div className="main-container container">
-            {/* <ProductPage/> */}
             <ListOfProducts/>
         </div>
     );

@@ -6,7 +6,7 @@ import TablesOfCompany from "./company-page/tbales/tables";
 const Company = () => {
     return (
         <div className="company">
-            <HeaderOfCompany/>
+            {/* <HeaderOfCompany/> */}
             <TablesOfCompany/>
         </div>
     );
