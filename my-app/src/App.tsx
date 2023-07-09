@@ -7,15 +7,16 @@ import Table from './components/table/table';
 import Footer from './components/footer/footer';  
 import SideBar from './components/sidebar/sidebar'; 
 import Company from './components/company/company';
-import Shop from './components/shop/list-of-products/list-of-products';
+import Shop from './components/shop/shop';
+
 
 const App = () => {
   return (
     <div className="App">
+      {/* <Shop/> */}
       {/* <NavBar/> */}
-      <Header/>
-      <Shop/>
-      {/* <Company/> */}
+      {/* <Header/> */}
+      <Company/>
       {/* <Table/> */}
       <SideBar/>
       <Footer/>
