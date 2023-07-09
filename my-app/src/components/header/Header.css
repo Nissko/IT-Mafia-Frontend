@@ -3,7 +3,7 @@ Body{
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #555555, #020202);
+  background: #191919;
   background-size: cover;
   background-attachment: fixed;
   background-position-x: center;
