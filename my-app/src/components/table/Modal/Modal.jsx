@@ -11,4 +11,4 @@ const Modal = ({active, setActive, children}) => {
   )
 };
 
-export default Modal;
+export default Modal
