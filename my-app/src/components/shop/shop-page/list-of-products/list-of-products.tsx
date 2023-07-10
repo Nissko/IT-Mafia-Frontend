@@ -1,6 +1,18 @@
 import React, { useState } from "react";
 import './list-of-products.css';
 import ProductPage from "../product-page/product-page";
+import axios from 'axios';
+
+axios.get('https://localhost:7068/Gun')
+  .then(response => {
+    // Обработка полученных данных
+    console.log(response.data);
+  })
+  .catch(error => {
+    // Обработка ошибки
+    console.error(error);
+    
+  });
 
 const ListOfProducts = () => {
   const [showProductPage, setShowProductPage] = useState(false);
