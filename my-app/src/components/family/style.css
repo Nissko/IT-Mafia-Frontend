@@ -1,0 +1,108 @@
+
+.family-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+  
+  .family-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #95A5A6;
+  padding: 18px;
+  border-radius: 18px;
+  }
+  
+  .family-icons {
+  display: flex;
+  }
+  
+  .family-icon {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .family-list-body-container {
+  display: flex;
+  margin-bottom: 20px;
+  }
+  
+  .family-list-body {
+  flex: 1;
+  /* margin-right: 10px; */
+  /* background-color: blue; */
+  /* padding: 18px; */
+  border-radius: 18px;
+  }
+  
+  .family-table {
+  width: 100%;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 18px;
+  background-color: #FF0000;
+  }
+  
+  .family-table th,
+  .family-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border: none;
+  }
+  
+  .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #ccc;
+  }
+  
+  .add-member-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+  
+  .company-incomes {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FF0000;
+  margin-left: 20px;
+  padding: 18px;
+  border-radius: 18px;
+  }
+  
+  .company-income {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  }
+  
+  .company-name {
+  font-weight: bold;
+  }
+  
+  .company-income-value {
+  margin-top: 5px;
+  }
+  
+  /* Дополнительные стили по желанию */
+  h1 {
+  margin: 0;
+  }
+  
+  h2 {
+  margin: 0;
+  }

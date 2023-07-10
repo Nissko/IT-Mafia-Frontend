@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+
+import ThemeContext from '../../themeContext'; // Используйте относительный путь ./themeContext
 import './sidebar.css';
 
 const Sidebar = () => {
+  const theme = useContext(ThemeContext as React.Context<string>);
   const [collapsed, setCollapsed] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
 
@@ -14,7 +17,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
+    <div className={`sidebar ${collapsed ? 'collapsed' : ''} ${theme}`}>
       <div className="sidebar-header">
         <div className="sidebar-toggle" onClick={toggleSidebar}>
           <i className={`fas ${collapsed ? 'fa-bars' : 'fa-times'}`}></i>
@@ -42,9 +45,11 @@ const Sidebar = () => {
      
          <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
           <i className="fas fa-users"></i>
+          
           {!collapsed && <span>Список семей</span>}
         </div>
         <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
+          
           <i className="fas fa-building"></i>
           {!collapsed && <span>Компании</span>}
         </div>

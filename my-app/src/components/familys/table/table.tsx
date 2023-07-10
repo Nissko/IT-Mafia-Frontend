@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './syle.css';
+import Modal from '../../Modal/Modal';
 
 const Table = () => {
+    const [modalActive, setModalActive] = useState(false)
     return <div className="table">
         <div className="container">
             <h2>
-                {/*Responsive Tables Using LI <small>Triggers on 767px</small>*/}
+                <button className="button family">
+                    Семья
+                </button>
+                <button className="button curator">
+                    Куратор
+                </button>
+                <button className="button add" onClick={() => setModalActive(true)}>
+                    Добавить семью
+                </button>
+                <Modal active={modalActive} setActive={setModalActive}>
+                    <p>Введите название семьи</p>
+                    <input type='text'/>
+                    <p>Введите описание семьи</p>
+                    <input type='text'/>
+                    <p>
+                    <button>Отправить</button>
+                    </p>
+                </Modal>
             </h2>
             <ul className="responsive-table">
                 <li className="table-header">
