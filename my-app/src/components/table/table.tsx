@@ -3,7 +3,7 @@ import './syle.css';
 import Modal from './Modal/Modal.jsx';
 
 const Table = () => {
-    const [modalActive, setModalActive] = useState(true)
+    const [modalActive, setModalActive] = useState(false)
     return <div className="table">
         <div className="container">
             <h2>
