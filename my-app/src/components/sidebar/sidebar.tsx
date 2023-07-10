@@ -22,7 +22,7 @@ const Sidebar = () => {
         {!collapsed && <div className="sidebar-title">MAFIA</div>}
       </div>
       <div className="sidebar-menu">
-        <div className="sidebar-menu-item active" onClick={toggleProfile}>
+        {/* <div className="sidebar-menu-item active" onClick={toggleProfile}>
           <div className={`profile-avatar ${collapsed ? 'collapsed' : ''}`}>
             <i className="fas fa-user-circle"></i>
           </div>
@@ -34,30 +34,36 @@ const Sidebar = () => {
               </div>
             </div>
           )}
-        </div>
+        </div> */}
         <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
           <i className="fas fa-home"></i>
           {!collapsed && <span>Главная</span>}
         </div>
-        <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
+     
+         <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
           <i className="fas fa-users"></i>
-          {!collapsed && <span>Пользователи</span>}
+          {!collapsed && <span>Список семей</span>}
         </div>
         <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
           <i className="fas fa-building"></i>
           {!collapsed && <span>Компании</span>}
         </div>
+       
         <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
-          <i className="fas fa-money-bill-wave"></i>
-          {!collapsed && <span>Доход</span>}
+          <i className="fas fa-shop"></i>
+          {!collapsed && <span>Магазин</span>}
         </div>
+        <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
+          <i className="fas fa-gamepad"></i>
+          {!collapsed && <span>Мини игра "Ринг"</span>}
+        </div>
+        <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
+          <i className="fas fa-gamepad"></i>
+          {!collapsed && <span>Мини игра "Снайпер"</span>}
+        </div>   
         <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
           <i className="fas fa-cog"></i>
           {!collapsed && <span>Настройки</span>}
-        </div>
-        <div className={`sidebar-menu-item ${collapsed ? 'collapsed' : ''}`}>
-          <i className="fas fa-user-lock"></i>
-          {!collapsed && <span>Роли и права</span>}
         </div>
       </div>
     </div>
