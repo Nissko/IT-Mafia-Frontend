@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+}
+@import "~@fortawesome/fontawesome-free/css/all.css";
+/* Стили для темы "light" */
+.App.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Стили для темы "dark" */
+  .App.dark {
+    background-color: #222222;
+    color: #ffffff;
+  }
+  
+  button.toggle-theme {
+    /* position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px;
+    font-size: 16px; */
+    margin-left: 400px;
+    /* margin-top: 10px; */
+  }
+  .toggle-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .toggle-theme.light:before {
+    content: "\f185"; /* Иконка солнца в Font Awesome */
+    font-family: "Font Awesome 5 Free";
+  }
+  
+  .toggle-theme.dark:before {
+    content: "\f186"; /* Иконка луны в Font Awesome */
+    font-family: "Font Awesome 5 Free";
+  }
+  /* sidebare toggle theme */
+  .slidebar-toggle{
+    background-color: #ffffff;
+  }

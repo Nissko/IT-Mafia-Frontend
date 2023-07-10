@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './list-of-products.css';
 import ProductPage from "../product-page/product-page";
-import axios from 'axios';
+// import axios from 'axios';
 import Pistol from "../img/pistol.jpg";
 
 // axios.get('https://localhost:7068/Gun')
